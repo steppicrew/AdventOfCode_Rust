@@ -38,7 +38,7 @@ name = "aoc2019_day04"
 version = "0.1.0"
 dependencies = [
  "file",
- "itertools",
+ "itertools 0.9.0",
 ]
 
 [[package]]
@@ -46,7 +46,7 @@ name = "aoc2019_day05"
 version = "0.1.0"
 dependencies = [
  "file",
- "itertools",
+ "itertools 0.9.0",
 ]
 
 [[package]]
@@ -54,7 +54,7 @@ name = "aoc2019_day06"
 version = "0.1.0"
 dependencies = [
  "file",
- "itertools",
+ "itertools 0.9.0",
 ]
 
 [[package]]
@@ -62,7 +62,7 @@ name = "aoc2019_day07"
 version = "0.1.0"
 dependencies = [
  "file",
- "itertools",
+ "itertools 0.9.0",
 ]
 
 [[package]]
@@ -70,7 +70,40 @@ name = "aoc2019_day08"
 version = "0.1.0"
 dependencies = [
  "file",
- "itertools",
+ "itertools 0.9.0",
+]
+
+[[package]]
+name = "aoc2019_day09"
+version = "0.1.0"
+dependencies = [
+ "file",
+ "itertools 0.9.0",
+]
+
+[[package]]
+name = "aoc2019_day10"
+version = "0.1.0"
+dependencies = [
+ "file",
+ "itertools 0.9.0",
+]
+
+[[package]]
+name = "aoc2019_day11"
+version = "0.1.0"
+dependencies = [
+ "file",
+ "itertools 0.9.0",
+]
+
+[[package]]
+name = "aoc2019_day12"
+version = "0.1.0"
+dependencies = [
+ "file",
+ "itertools 0.12.1",
+ "regex",
 ]
 
 [[package]]
@@ -107,6 +140,15 @@ name = "itertools"
 version = "0.9.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "284f18f85651fe11e8a991b2adb42cb078325c996ed026d994719efcfca1d54b"
+dependencies = [
+ "either",
+]
+
+[[package]]
+name = "itertools"
+version = "0.12.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ba291022dbbd398a455acf126c1e341954079855bc60dfdda641363bd6922569"
 dependencies = [
  "either",
 ]
