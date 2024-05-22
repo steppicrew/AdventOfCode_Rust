@@ -1,5 +1,9 @@
 use regex::Regex;
-use std::fs;
+use std::{
+    fmt::Display,
+    fs,
+    ops::{Add, Sub},
+};
 
 fn analyze_file(filename: &str, test: u8) -> (String, String, String) {
     let re = Regex::new(r"(\d+)\/(\d+)\/src\/main\.rs").unwrap();
@@ -34,7 +38,7 @@ pub fn readinput(filename: &str, test: u8) -> Vec<String> {
         .collect()
 }
 
-pub fn writeoutput(filename: &str, part: u8, test: u8, result: i128) {
+pub fn writeoutput<T: Display>(filename: &str, part: u8, test: u8, result: T) {
     let (year, day, extension) = analyze_file(filename, test);
     let output_filepath = get_abs_path(format!(
         "./{}/data/result_{}_{}{}",

@@ -1,0 +1,14 @@
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+[package]
+name = "aoc2019_day15"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+file = { path = "../../file" }
+itertools="0.13.0"
+regex = "1.10.4"
